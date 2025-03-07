@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 225 30% 96%;
+    --foreground: 235 40% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 235 40% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 40% 15%;
+    --primary: 230 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 235 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 235 25% 94%;
+    --muted-foreground: 235 25% 40%;
+    --accent: 240 95% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 235 20% 92%;
+    --input: 235 20% 92%;
+    --ring: 230 100% 50%;
+    --chart-1: 230 90% 60%;
+    --chart-2: 235 85% 55%;
+    --chart-3: 240 80% 50%;
+    --chart-4: 245 85% 45%;
+    --chart-5: 250 90% 55%;
+  }
+  
+  .dark {
+    --background: 235 30% 3%;
+    --foreground: 235 10% 98%;
+    --card: 235 30% 5%;
+    --card-foreground: 235 10% 98%;
+    --popover: 235 30% 5%;
+    --popover-foreground: 235 10% 98%;
+    --primary: 230 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 235 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 235 25% 12%;
+    --muted-foreground: 235 20% 75%;
+    --accent: 240 95% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 235 25% 12%;
+    --input: 235 25% 12%;
+    --ring: 230 100% 60%;
+    --chart-1: 230 90% 60%;
+    --chart-2: 235 85% 65%;
+    --chart-3: 240 80% 70%;
+    --chart-4: 245 85% 65%;
+    --chart-5: 250 90% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+::selection {
+  background-color: rgba(56, 89, 255, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(56, 89, 255, 0.5);
+  border-radius: 0.1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #030711;
+}
+
+img,
+image {
+  user-select: none;
+  pointer-events: none;
+}
