@@ -62,8 +62,8 @@ const Footer = () => {
                                 New York, NY 10001
                             </p>
                             <div className="mt-4 text-sm text-muted-foreground">
-                                <p>support@propease.com</p>
-                                <p>+1 (123) 456-7890</p>
+                                <p>duggal@synexai.in</p>
+                                <p>+1 (991) 456-7880</p>
                             </div>
                             <div className="flex items-center gap-4 mt-6">
                                 {SOCIAL_LINKS.map((social, index) => (
@@ -164,7 +164,7 @@ const Footer = () => {
                 <AnimationContainer animation="fadeUp" delay={1}>
                     <div className="mt-16 border-t border-border/40 py-8 flex flex-col md:flex-row items-center justify-center">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} PropEase. All rights reserved.
+                            © {new Date().getFullYear()} SynexAI. All rights reserved.
                         </p>
                     </div>
                 </AnimationContainer>
